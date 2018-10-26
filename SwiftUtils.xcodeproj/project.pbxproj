@@ -26,6 +26,18 @@
 		84E5B7122182B7CF00CC337C /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 845321772181C53E006D582C /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84E5B6C02182AC6500CC337C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		845321742181C53E006D582C /* SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845321772181C53E006D582C /* SwiftUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUtils.h; sourceTree = "<group>"; };
@@ -183,6 +195,9 @@
 				84E5B6E22182B14100CC337C /* Sources */,
 				84E5B6E32182B14100CC337C /* Frameworks */,
 				84E5B6E42182B14100CC337C /* Resources */,
+
+
+
 			);
 			buildRules = (
 			);
@@ -602,6 +617,30 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84E5B6C62182AC6500CC337C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84E5B6C72182AC6500CC337C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
