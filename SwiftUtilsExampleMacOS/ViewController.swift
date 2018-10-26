@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftUtils
 
 class ViewController: NSViewController {
 
@@ -14,6 +15,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.layer?.backgroundColor = NSColor.init(hex: "0xFF0000").cgColor // red
     }
 
     override var representedObject: Any? {

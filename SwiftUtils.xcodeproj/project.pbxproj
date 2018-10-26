@@ -23,6 +23,7 @@
 		84E5B70F2182B70D00CC337C /* SwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845321742181C53E006D582C /* SwiftUtils.framework */; };
 		84E5B7102182B75100CC337C /* SUColorUtils.swift in Headers */ = {isa = PBXBuildFile; fileRef = 8453217F2181C588006D582C /* SUColorUtils.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		84E5B7112182B75100CC337C /* SUStringUtils.swift in Headers */ = {isa = PBXBuildFile; fileRef = 845321812181C59E006D582C /* SUStringUtils.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E5B7122182B7CF00CC337C /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 845321772181C53E006D582C /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +149,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5B7122182B7CF00CC337C /* SwiftUtils.h in Headers */,
 				84E5B7102182B75100CC337C /* SUColorUtils.swift in Headers */,
 				84E5B7112182B75100CC337C /* SUStringUtils.swift in Headers */,
 			);
@@ -340,6 +342,7 @@
 /* Begin XCBuildConfiguration section */
 		8453217A2181C53E006D582C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -405,6 +408,7 @@
 		};
 		8453217B2181C53E006D582C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -483,8 +487,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.SwiftUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,8 +517,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.SwiftUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -521,6 +527,7 @@
 		};
 		84E5B6F42182B14200CC337C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftUtilsExampleMacOS/SwiftUtilsExampleMacOS.entitlements;
@@ -541,6 +548,7 @@
 		};
 		84E5B6F52182B14200CC337C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SwiftUtilsExampleMacOS/SwiftUtilsExampleMacOS.entitlements;
@@ -561,6 +569,7 @@
 		};
 		84E5B70A2182B1BA00CC337C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +588,7 @@
 		};
 		84E5B70B2182B1BA00CC337C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

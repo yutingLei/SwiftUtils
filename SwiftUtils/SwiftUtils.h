@@ -6,7 +6,7 @@
 //  Copyright © 2018 Develop. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for SwiftUtils.
 FOUNDATION_EXPORT double SwiftUtilsVersionNumber;
