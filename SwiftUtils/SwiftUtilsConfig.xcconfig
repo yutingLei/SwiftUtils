@@ -1,0 +1,32 @@
+//
+//  SwiftUtilsConfig.xcconfig
+//  SwiftUtils
+//
+//  Created by admin on 2018/10/26.
+//  Copyright © 2018 Develop. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SUPPORT_PLATFORM = iphoneos iphonesimulator macosx
+TARGET_DEVICE_FAMILY = 1,2
+
+//////////////////////////////////////////////
+//
+// iOS specific
+//
+IPHONEOS_DEPLOYMENT_TARGET = 10.0
+VALID_ARCHS[sdk=iphoneos*] = arm64 armv7 armv7s
+VALID_ARCHS[sdk=iphonesimulator*] = i386 x86_64
+
+LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*] =  @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*] =  @executable_path/Frameworks @loader_path/Frameworks
+
+//////////////////////////////////////////////
+//
+// MacOS specific
+//
+MACOSX_DEPLOYMENT_TARGET = 10.11
+VALID_ARCHS[sdk=macoxs*] = i386 x86_64
+
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] =  @executable_path/../Frameworks @loader_path/../Frameworks

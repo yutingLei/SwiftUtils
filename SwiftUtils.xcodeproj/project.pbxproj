@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845321792181C53E006D582C /* SwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 845321772181C53E006D582C /* SwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		845321802181C588006D582C /* SUColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453217F2181C588006D582C /* SUColorUtils.swift */; };
 		845321822181C59E006D582C /* SUStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845321812181C59E006D582C /* SUStringUtils.swift */; };
 		84E5B6E92182B14100CC337C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5B6E82182B14100CC337C /* AppDelegate.swift */; };
@@ -19,6 +18,11 @@
 		84E5B7022182B1BA00CC337C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E5B7002182B1BA00CC337C /* Main.storyboard */; };
 		84E5B7042182B1BA00CC337C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84E5B7032182B1BA00CC337C /* Assets.xcassets */; };
 		84E5B7072182B1BA00CC337C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E5B7052182B1BA00CC337C /* LaunchScreen.storyboard */; };
+		84E5B70D2182B50900CC337C /* SwiftUtilsConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */; };
+		84E5B70E2182B70600CC337C /* SwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845321742181C53E006D582C /* SwiftUtils.framework */; };
+		84E5B70F2182B70D00CC337C /* SwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845321742181C53E006D582C /* SwiftUtils.framework */; };
+		84E5B7102182B75100CC337C /* SUColorUtils.swift in Headers */ = {isa = PBXBuildFile; fileRef = 8453217F2181C588006D582C /* SUColorUtils.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		84E5B7112182B75100CC337C /* SUStringUtils.swift in Headers */ = {isa = PBXBuildFile; fileRef = 845321812181C59E006D582C /* SUStringUtils.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,7 @@
 		84E5B7032182B1BA00CC337C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84E5B7062182B1BA00CC337C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E5B7082182B1BA00CC337C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SwiftUtilsConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5B70E2182B70600CC337C /* SwiftUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5B70F2182B70D00CC337C /* SwiftUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				845321772181C53E006D582C /* SwiftUtils.h */,
+				84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */,
 				8453217F2181C588006D582C /* SUColorUtils.swift */,
 				845321812181C59E006D582C /* SUStringUtils.swift */,
 				845321782181C53E006D582C /* Info.plist */,
@@ -140,7 +148,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845321792181C53E006D582C /* SwiftUtils.h in Headers */,
+				84E5B7102182B75100CC337C /* SUColorUtils.swift in Headers */,
+				84E5B7112182B75100CC337C /* SUStringUtils.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E5B70D2182B50900CC337C /* SwiftUtilsConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +464,9 @@
 		};
 		8453217D2181C53E006D582C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.SwiftUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,7 +493,9 @@
 		};
 		8453217E2181C53E006D582C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -498,6 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.develop.SwiftUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
