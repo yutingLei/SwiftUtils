@@ -2,10 +2,10 @@
 
 Extend convenience methods for swift
 
-- SUColorUtils
+- **SUColorUtils**
 
-	- **Method:** rgb(red, green, blue)  
-	**Usage:**
+	- Method: rgb(red, green, blue)  
+	Usage:
 		<ul>
 		<li>UIColor.rgb(255, 0, 0) // is red</li>
 		<li>UIColor.rgb(0, 255, 0) // is green</li>
@@ -13,11 +13,11 @@ Extend convenience methods for swift
 		<li>In this method, will process parameters with express `$0 > 1 ? $0 / 255.0 : $0`</li>
 		</ul>
 	
-	* **Method:** rgba(red, green, blue, alpha)  
-	**Usage:** refrence `rgb()` method
+	* Method: rgba(red, green, blue, alpha)  
+	Usage: refrence `rgb()` method
 	
-	* **Method:** init(hex: String)  
-	**Usage:**  
+	* Method: init(hex: String)  
+	Usage:  
 	note: it doesn't matter that contains the character of `0x` or `0X`
 		<ul>
 		<li>UIColor.init("0xFFF") // is white</li>
@@ -28,12 +28,40 @@ Extend convenience methods for swift
 		<li>UIColor.init("FFFFFFFF") // also is white, consist of `r,g,b,a` that each color contain 2 characters</li>
 		</ul>
 
-- SUStringUtils
+- **SUStringUtils**
 
-	* **Method:** subscript(CountableRange<Int>|CountableClosedRange<Int>)  
-	**Usage:**  
+	* Method: subscript(CountableRange<Int>|CountableClosedRange<Int>)  
+	Usage:  
 	Statement one variable: `let oneString = "hello world!"`
 		<ul>
 		<li>let newString1 = oneString[0..<1] // newString1 => `h` </li>
 		<li>let newString2 = oneString[0...1] // newString2 => `he` </li>
+		</ul>
+
+- SUUtils
+
+	* Method: class func generateQRCode(value, dstSize?, withCenteredImage?, graphicColor?)  
+	Usage: 
+		<ul>
+			<li>SUUtils.generateQRCode("hello world") // other params are options</li>
+			<li>SUUtils.generateQRCode("hello world", dstSize: CGSize(width: w, height: h)) // With custom size for QR Code image</li>
+			<li>SUUtils.generateQRCode("hello world", withCenteredImage: UIImage(named: "chrome.png")) // QR Code image with an icon at center of it</li>
+			<li>SUUtils.generateQRCode("hello world", graphicColor: UIColor.deepSkyBlue) // Graphiced with deepSkyBlue</li>
+			<li>SUUtils.generateQRCode("hello world", dstSize: CGSize(width: w, height: h), withCenteredImage: UIImage(named: "chrome.png"), graphicColor: UIColor.deepSkyBlue) // generate with all params</li>
+		</ul>
+	
+	* Effects:
+		<div>
+			<img src="./qrcode-effects.png">
+		</div>
+
+- SUImageUtils
+
+	* Method:  
+	 			- resizeTo(CGSize) -> Image  
+				- class func resize(Image, to: CGSize) -> Image
+	Usage:
+		<ul>
+		<li>imageObj.resizeTo(CGSize.init(width: 150, height: 150))</li>
+		<li>SUImage.resize(`An image object`, to: CGSize.init(width: 150, height: 150))</li>
 		</ul>

@@ -15,7 +15,16 @@ import AppKit
 
 public class SUUtils {
 
-    public class func generateQRCode(_ value: String, dstSize: CGSize?, withCenteredImage cImage: SUImage? = nil, graphicColor sColor: SUColor? = nil) -> SUImage? {
+
+    /// A public class method to generate QR code.
+    ///
+    /// - Parameters:
+    ///   - value: QR Code's content
+    ///   - dstSize: QR Code's image size
+    ///   - cImage: Graphics this image to the center of QR Code's image if you needed
+    ///   - sColor: Stroke color for image, default is `black`
+    /// - Returns: An QR Code image
+    public class func generateQRCode(_ value: String, dstSize: CGSize? = nil, withCenteredImage cImage: SUImage? = nil, graphicColor sColor: SUColor? = nil) -> SUImage? {
 
         // Get data
         let qrContent = value.data(using: .utf8)!

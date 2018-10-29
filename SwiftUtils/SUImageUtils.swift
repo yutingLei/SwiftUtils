@@ -63,7 +63,7 @@ public extension SUImage {
     ///   - image: An object of image
     ///   - newSize: Will resizing size
     /// - Returns: Return an new image if succeed, otherwise origin image
-    public class func resize(_ image: SUImage, to newSize: CGSize) -> SUImage? {
+    public class func resize(_ image: SUImage, to newSize: CGSize) -> SUImage {
         return image.resizeTo(newSize)
     }
 
