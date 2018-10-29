@@ -59,8 +59,9 @@ Extend convenience methods for swift
 
 	* Method:  
 	 			- resizeTo(CGSize) -> Image  
-				- class func resize(Image, to: CGSize) -> Image
+				- class func resize(Image, to: CGSize) -> Image  
 	Usage:
+		
 		<ul>
 		<li>imageObj.resizeTo(CGSize.init(width: 150, height: 150))</li>
 		<li>SUImage.resize(`An image object`, to: CGSize.init(width: 150, height: 150))</li>
