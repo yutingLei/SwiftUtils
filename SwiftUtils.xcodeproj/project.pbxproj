@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8411DDCD2186A0E600A9A879 /* SUImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411DDCB2186A0E500A9A879 /* SUImageUtils.swift */; };
-		8411DDCE2186A0E600A9A879 /* SUUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411DDCC2186A0E500A9A879 /* SUUtils.swift */; };
+		8411DDD32186DC3400A9A879 /* SUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8411DDD22186DC3400A9A879 /* SUtils.swift */; };
 		845321802181C588006D582C /* SUColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453217F2181C588006D582C /* SUColorUtils.swift */; };
 		845321822181C59E006D582C /* SUStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845321812181C59E006D582C /* SUStringUtils.swift */; };
 		84E5B6E92182B14100CC337C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5B6E82182B14100CC337C /* AppDelegate.swift */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		8411DDCB2186A0E500A9A879 /* SUImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUImageUtils.swift; sourceTree = "<group>"; };
-		8411DDCC2186A0E500A9A879 /* SUUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUUtils.swift; sourceTree = "<group>"; };
+		8411DDD22186DC3400A9A879 /* SUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUtils.swift; sourceTree = "<group>"; };
 		845321742181C53E006D582C /* SwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		845321772181C53E006D582C /* SwiftUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUtils.h; sourceTree = "<group>"; };
 		845321782181C53E006D582C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			children = (
 				84E5B70C2182B50900CC337C /* SwiftUtilsConfig.xcconfig */,
 				845321772181C53E006D582C /* SwiftUtils.h */,
-				8411DDCC2186A0E500A9A879 /* SUUtils.swift */,
+				8411DDD22186DC3400A9A879 /* SUtils.swift */,
 				8411DDCB2186A0E500A9A879 /* SUImageUtils.swift */,
 				8453217F2181C588006D582C /* SUColorUtils.swift */,
 				845321812181C59E006D582C /* SUStringUtils.swift */,
@@ -294,9 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				845321822181C59E006D582C /* SUStringUtils.swift in Sources */,
-				8411DDCE2186A0E600A9A879 /* SUUtils.swift in Sources */,
 				8411DDCD2186A0E600A9A879 /* SUImageUtils.swift in Sources */,
 				845321802181C588006D582C /* SUColorUtils.swift in Sources */,
+				8411DDD32186DC3400A9A879 /* SUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
