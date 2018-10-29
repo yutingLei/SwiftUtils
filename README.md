@@ -14,7 +14,7 @@ Extend convenience methods for swift.
 ## Install
 
 * Carthage  
-	make `cartfile` in the root directory of your project.  
+	create `Cartfile` in the root directory of your project.  
 	add content `github "yutingLei/SwiftUtils" "master"` to it  
 	run command `carthage update`, also add option`--platform iOS` | `--platform MacOS` accroding to your platform
 
