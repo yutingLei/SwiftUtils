@@ -13,7 +13,7 @@ import UIKit
 import AppKit
 #endif
 
-public class SUUtils {
+public class SUtils {
 
 
     /// A public class method to generate QR code.
