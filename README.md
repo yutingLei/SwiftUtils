@@ -1,6 +1,6 @@
 ## About SwiftUtils
 
-Extend convenience methods for swift.
+Convenience methods for swift.
 
 ## Requirements
 
@@ -93,3 +93,18 @@ Extend convenience methods for swift.
 	let qrImage5 = SUtils.generate("hello world",, dstSize: CGSize(width: 200, height: 200), centeredImage: SUImage(named: "your_icon_image"), graphicColor: SUColor.deepSkyBlue) // all vars
 	```
 	<img src="./qrcode-effects.png" />
+	
+- **Loading**
+
+	Loading animations for network request.
+	- show(LoadingType?)
+	- dismiss()
+	
+	```swift
+	// Show
+	SULoading.show() // default type = .system
+	SULoading.show(.classic) // type is .classic
+	SULoading.show(.circleSnail) // type is .circleSnail
+	// Dismiss
+	SULoading.dismiss()
+	```
