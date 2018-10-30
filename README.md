@@ -94,7 +94,7 @@ Convenience methods for swift.
 	```
 	<img src="./qrcode-effects.png" />
 	
-- **Loading**
+- **Loading(iOS only)**
 
 	Loading animations for network request.
 	- show(LoadingType?)
