@@ -1,4 +1,4 @@
-## About SiwftUtils
+## About SwiftUtils
 
 Extend convenience methods for swift.
 
