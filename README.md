@@ -9,7 +9,7 @@ Convenience methods for swift.
 ## Supports
 
 * iOS 10 or higher
-* macOS 10.10 or higher
+* macOS 10.11 or higher
 
 ## Install
 
