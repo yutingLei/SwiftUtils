@@ -147,7 +147,7 @@ public extension SULoading {
     /// Animation for loading
     ///
     /// - Parameter type: Loading type, default is .system
-    public class func show(_ type: LoadingType = .system) {
+    public class func show(with type: LoadingType = .system) {
 
         /// Had a keywindow?
         guard let keyWin = UIApplication.shared.keyWindow else { return }
